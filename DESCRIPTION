@@ -1,0 +1,27 @@
+Package: survA
+Type: Package
+Title: Survival Analysis of user input data
+Version: 0.1.0
+Author: Jacob Hyman
+Maintainer: Jacob Hyman <jacobhyman9@gmail.com>
+Description: Allows users to create KM curves, perform Cox regression,
+    and predict time to percent attrition based on a Weibull model using 
+    user input data.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+  shiny,
+  bslib,
+  dplyr,
+  DT,
+  ggplot2,
+  ggpubr,
+  plotly,
+  survival,
+  survminer,
+  thematic,
+  grDevices,
+  stats,
+  utils
+RoxygenNote: 7.1.2
