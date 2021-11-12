@@ -324,7 +324,7 @@ scale_color_lt <- function(palette = "main", discrete = TRUE, reverse = FALSE, .
   pal <- lt_pal(palette = palette, reverse = reverse)
 
   if (discrete) {
-    discrete_scale("colour", paste0("lt_", palette), palette = pal, ...)
+    ggplot2::discrete_scale("colour", paste0("lt_", palette), palette = pal, ...)
   } else {
     scale_color_gradientn(colours = pal(256), ...)
   }
@@ -344,11 +344,9 @@ scale_fill_lt <- function(palette = "main", discrete = TRUE, reverse = FALSE, ..
   pal <- lt_pal(palette = palette, reverse = reverse)
 
   if (discrete) {
-    discrete_scale("fill", paste0("lt_", palette), palette = pal, ...)
+    ggplot2::discrete_scale("fill", paste0("lt_", palette), palette = pal, ...)
   } else {
     scale_fill_gradientn(colours = pal(256), ...)
   }
 }
-
-
 
