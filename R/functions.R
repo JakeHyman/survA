@@ -108,7 +108,7 @@ date_reformat <- function(data, startdate, endate, date_format, splits, event){
   if("none" %in% splits | is.null(splits)){
     data <- dplyr::select(data, c(startdate, endate, event, tenure))
   } else {
-    data <- select(data, c(startdate, endate, event, tenure, splits))
+    data <- dplyr::select(data, c(startdate, endate, event, tenure, splits))
   }
   return(data)
 }
@@ -349,4 +349,6 @@ scale_fill_lt <- function(palette = "main", discrete = TRUE, reverse = FALSE, ..
     scale_fill_gradientn(colours = pal(256), ...)
   }
 }
+
+
 
