@@ -1,5 +1,4 @@
-#' Shiny app server object
-#'
+
 ui <- shiny::fluidPage(
 
   theme = bslib::bs_theme(
